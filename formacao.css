@@ -17,12 +17,12 @@
 .formacao-container::after {
 	content: "";
 	display: block;
-	width: 130px;
-	height: 100px;
-	background: url("img/detalhe.svg") no-repeat center;
+	width: 100px;
+	height: 5px;
+	background: linear-gradient(#4B0082, #9400D3);
 	position: absolute;
-	bottom: -50px;
-	left: 20px;
+	bottom: -3px;
+	-webkit-transform: rotate(45deg);
 }
 
 .formacao .subtitulo {
@@ -69,16 +69,6 @@
 	position: relative;
 }
 
-.faculdade-curso::before {
-	content: "";
-	display: block;
-	width: 4px;
-	height: 20px;
-	background: linear-gradient(#4B0082, #9400D3);
-	position: absolute;
-	left: -24px;
-}
-
 .faculdade-instituicao {
 	font-size: 1.125rem;
 	color: #a3a3a3;
@@ -103,8 +93,8 @@
 	width: 24px;
 	height: 24px;
 	position: absolute;
-	left: -25px;
-	top: 0px;
+	left: 0px;
+	top: -25px;
 }
 
 .cursos h3::before {
@@ -125,16 +115,14 @@
 	color: #8f8f8f;
 }
 
-.cursos li {
-	display: flex;
-	justify-content: space-between;
-}
-
 @media (max-width: 800px) {
 	.formacao-container {
 		grid-template-columns: 1fr;
 		padding: 60px 20px;
 		gap: 40px;
+	}
+	.formacao-container::after {
+		display: none;
 	}
 	.formacao .subtitulo {
 		color: #ffffff;
