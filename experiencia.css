@@ -32,17 +32,7 @@
 	margin-bottom: 20px;
 	border-radius: 4px;
 	position: relative;
-}
-
-.empresa::before {
-	content: "";
-	display: block;
-	width: 4px;
-	height: 20px;
-	background: linear-gradient(#4B0082, #9400D3);
-	position: absolute;
-	top: 20px;
-	left: -4px;
+	border-left: #4B0082 solid 3px;
 }
 
 .empresa-ano {
